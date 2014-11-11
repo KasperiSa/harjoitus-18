@@ -15,16 +15,16 @@ int main()
 	for (ind = 0; ind < MAX_KOIRA; ind++)
 	{
 		cout << "Anna " << ind + 1
-			<< " Koiran ikä ja nimi ";
-		cin >> koira[ind].ika;
-		cin >> koira[ind].nimi;
+			<< " Koiran ikÃ¤ ja nimi ";
+		cin >> koira[ind].ika >> koira[ind].nimi;
+		
 
 	}
-	cout << "koirien iät ja nimet \n";
+	cout << "koirien iÃ¤t ja nimet \n";
 	for (ind = 0; ind < MAX_KOIRA; ind++)
 	{
 		cout << "Koiran " << ind + 1
-			<< " nimi ja ikä: ";
+			<< " nimi ja ikÃ¤: ";
 		cout << koira[ind].ika << koira[ind].nimi << endl;
 	
 
@@ -43,7 +43,7 @@ int main()
 	for (ind = 0; ind < MAX_KOIRA; ind++)
 	{
 		cout << "Koiran " << ind + 1
-			<< " nimi ja ikä: ";
+			<< " nimi ja ikÃ¤: ";
 		cout << koira[ind].ika << koira[ind].nimi << endl;
 
 
@@ -64,7 +64,7 @@ int main()
 	const int MAX_TAULU = 4;
 	int taulu[MAX_TAULU] = { 2, 7, 1, 3 };
 	int ind;
-	cout << "Taulukko ennen järjest\n";
+	cout << "Taulukko ennen jÃ¤rjest\n";
 	for (ind = 0; ind < MAX_TAULU; ind++)
 	{
 		cout << taulu[ind] << " ";
@@ -79,7 +79,7 @@ int main()
 				taulu[j] = taulu[i];
 				taulu[i] = tmp;
 			}
-	cout << "Taulukko järjestämisen jälkeen\n";
+	cout << "Taulukko jÃ¤rjestÃ¤misen jÃ¤lkeen\n";
 	for (ind = 0; ind < MAX_TAULU; ind++)
 	{
 		cout << taulu[ind] << " ";
